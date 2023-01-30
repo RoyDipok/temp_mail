@@ -17,5 +17,16 @@
     <div class="container">
 
     </div>
+    <script>
+
+    var elements = document.getElementsByTagName('a');
+    for (var i = 0, len = elements.length; i < len; i++) {
+        elements[i].onclick = function () {
+            var link =  elements[i].getAttribute("href");
+            console.log(link);
+        }
+    }
+</script>
+    
 </body>
 </html>
